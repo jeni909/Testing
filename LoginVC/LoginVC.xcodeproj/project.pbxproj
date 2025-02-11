@@ -11,6 +11,8 @@
 		02D8DC3D2D5B527E00E04EA7 /* LoginVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D8DC322D5B527E00E04EA7 /* LoginVC.framework */; };
 		02D8DC422D5B527E00E04EA7 /* LoginVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8DC412D5B527E00E04EA7 /* LoginVCTests.swift */; };
 		02D8DC432D5B527E00E04EA7 /* LoginVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D8DC352D5B527E00E04EA7 /* LoginVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02D8DC4E2D5B533C00E04EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D8DC4D2D5B533C00E04EA7 /* Main.storyboard */; };
+		02D8DC502D5B534600E04EA7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8DC4F2D5B534600E04EA7 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		02D8DC362D5B527E00E04EA7 /* LoginVC.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LoginVC.docc; sourceTree = "<group>"; };
 		02D8DC3C2D5B527E00E04EA7 /* LoginVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D8DC412D5B527E00E04EA7 /* LoginVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCTests.swift; sourceTree = "<group>"; };
+		02D8DC4D2D5B533C00E04EA7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		02D8DC4F2D5B534600E04EA7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		02D8DC342D5B527E00E04EA7 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
+				02D8DC4C2D5B532A00E04EA7 /* Testing */,
 				02D8DC352D5B527E00E04EA7 /* LoginVC.h */,
 				02D8DC362D5B527E00E04EA7 /* LoginVC.docc */,
 			);
@@ -83,6 +88,15 @@
 				02D8DC412D5B527E00E04EA7 /* LoginVCTests.swift */,
 			);
 			path = LoginVCTests;
+			sourceTree = "<group>";
+		};
+		02D8DC4C2D5B532A00E04EA7 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				02D8DC4D2D5B533C00E04EA7 /* Main.storyboard */,
+				02D8DC4F2D5B534600E04EA7 /* LoginVC.swift */,
+			);
+			path = Testing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D8DC4E2D5B533C00E04EA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D8DC502D5B534600E04EA7 /* LoginVC.swift in Sources */,
 				02D8DC372D5B527E00E04EA7 /* LoginVC.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +425,7 @@
 		02D8DC4A2D5B527E00E04EA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,6 +441,7 @@
 		02D8DC4B2D5B527E00E04EA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
